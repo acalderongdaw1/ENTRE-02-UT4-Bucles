@@ -1,8 +1,7 @@
-
 /**
  *  Clase que dibuja una figura 
  * 
- * @author - 
+ * @author Alex Calderón 
  *  
  */
 public class PintorFiguras
@@ -19,15 +18,35 @@ public class PintorFiguras
      * 
      * (usa bucles for)
      */
-    public  void dibujarFigura(int altura) {
-        
+    public void dibujarFigura(int altura) {
+        for(int alt=0;alt<altura;alt++){
+            for(int k=0;k<1;k++){
+                for(int j=0;j<(altura)-alt-1;j++){
+                    escribirEspacios(' ', 2);
+                }
+            }
+            for(int pos=0;pos<alt+1;pos++){
+                for(int j=0;j<ANCHO_BLOQUE;j++){
+                    if(pos % 2 == 0){
+                        System.out.print(CAR1);
+                    }
+                    else{
+                        System.out.print(CAR2);
+                    }
+                }
+            }
+            System.out.println();
+        }
     }
+        
+
 
     /**
      * Método privado de ayuda que escribe n espacios en la misma línea
      */
-    private  void escribirEspacios(char caracter, int n) {
-         
-
+    private static void escribirEspacios(char caracter, int n) {
+        for(int i=0;i<n;i++){
+            System.out.print(caracter);
+        }
     }
 }

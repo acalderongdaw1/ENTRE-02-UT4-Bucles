@@ -15,15 +15,15 @@ public class Pantalla
     {
         System.out.println("\n\n\tIntro para continuar");
         teclado.nextLine();
-
+ 
     }
 
     /**
-     *  Borrar la pantalla
+     *  Borrar la pantalla 
      */
-    public static void borrarPantalla()
+    public static void borrarPantalla() 
     {
-        System.out.print('\u000C');
+        System.out.print('\u000C'); 
 
     }
 }

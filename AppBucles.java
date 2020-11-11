@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- *  @author - 
+ *  @author Alex Calderón 
  *  
  * Punto de entrada a la aplicación
  *  
